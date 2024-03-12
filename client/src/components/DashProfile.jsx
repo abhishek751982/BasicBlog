@@ -49,7 +49,7 @@ export default function DashProfile() {
           (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
         setImageFileUploadProgress(progress.toFixed(0));
       },
-      (error) => {
+      () => {
         setImageFileUploadError('Could not upload image (File must be less than 2MB)');
         setImageFileUploadProgress(null);
         setImageFile(null);
@@ -67,14 +67,19 @@ export default function DashProfile() {
     <div className='max-w-lg mx-auto p-3 w-full'>
       <h1 className='my-7 text-center font-semibold text-3xl'>Profile</h1>
       <form className='flex flex-col gap-4'>
-        <input type='file' accept='image/*' onChange={handleImageChange} ref={filePickerRef} 
+        <input 
+          type='file' 
+          accept='image/*' 
+          onChange={handleImageChange} 
+          ref={filePickerRef} 
           hidden
         />
         <div className='relative w-32 h-32 self-center cursor-pointer shadow-md overflow-hidden rounded-full' onClick={() => filePickerRef.current.click()}
         >
           {imageFileUploadProgress && (
             <CircularProgressbar 
-              value={imageFileUploadProgress || 0} text={`${imageFileUploadProgress}%`} 
+              value={imageFileUploadProgress || 0} 
+              text={`${imageFileUploadProgress}%`} 
               strokeWidth={5}
               styles={{
                 root: {
@@ -85,14 +90,26 @@ export default function DashProfile() {
                   left: 0,
                 },
                 path: {
-                  stroke: `rgba(62, 152, 199, ${imageFileUploadProgress / 100})`,
+                  stroke: `rgba(62, 152, 199, ${
+                    imageFileUploadProgress / 100
+                  })`,
                 },
               }}
             />
           )}
-          <img src={imageFileUrl || currentUser.profilePicture} alt="user" className={`rounded-full w-full h-full object-cover border-8 border-[lightgray] ${imageFileUploadProgress && imageFileUploadProgress < 100 && 'opacity-60'}`} />
+          <img 
+            src={imageFileUrl || currentUser.profilePicture} 
+            alt="user" 
+            className={`rounded-full w-full h-full object-cover border-8 border-[lightgray] ${
+              imageFileUploadProgress && 
+              imageFileUploadProgress < 100 && 
+              'opacity-60'
+            }`} 
+          />
         </div>
-        {imageFileUploadError && <Alert color='failure'>{imageFileUploadError}</Alert>}
+        {imageFileUploadError && (
+          <Alert color='failure'>{imageFileUploadError}</Alert>
+        )}
         <TextInput 
           type='text' 
           id='username' 
@@ -110,7 +127,11 @@ export default function DashProfile() {
           id='password' 
           placeholder='password' 
         />
-        <Button type='submit' gradientDuoTone='purpleToBlue' outline>
+        <Button 
+          type='submit' 
+          gradientDuoTone='purpleToBlue' 
+          outline
+        >
           Update
         </Button>
       </form>
@@ -121,3 +142,4 @@ export default function DashProfile() {
     </div>
   )
 }
+
