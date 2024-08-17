@@ -102,7 +102,7 @@ BasicBlog is a full-stack blog application developed using the MERN stack (Mongo
     │ │ └── ...
     │ └── ...
     │
-    ├── server/ # Node.js backend
+    ├── api/ # Node.js backend
     │ ├── config/ # Configuration files
     │ ├── controllers/ # Route controllers
     │ ├── models/ # Mongoose models
