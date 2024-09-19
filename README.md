@@ -25,6 +25,7 @@ BasicBlog is a full-stack blog application developed using the MERN stack (Mongo
 - **Backend**:
   - Node.js
   - Express.js
+  - JWT
 
 - **Database**:
   - MongoDB
