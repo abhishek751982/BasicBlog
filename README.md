@@ -1,5 +1,7 @@
 # BasicBlog - MERN Stack Blog Application
 
+![basicblog](https://github.com/user-attachments/assets/9a5d1999-8e4c-4677-846d-ccf15a029976)
+
 ## Overview
 
 BasicBlog is a full-stack blog application developed using the MERN stack (MongoDB, Express.js, React.js, Node.js). The application features user and admin dashboards, theme toggle functionality, search capabilities, and secure user authentication using Email and Google. Redux is utilized for efficient state management.
@@ -23,6 +25,7 @@ BasicBlog is a full-stack blog application developed using the MERN stack (Mongo
 - **Backend**:
   - Node.js
   - Express.js
+  - JWT
 
 - **Database**:
   - MongoDB
