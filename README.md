@@ -1,10 +1,11 @@
 # BasicBlog - MERN Stack Blog Application
 
-![basicblog](https://github.com/user-attachments/assets/9a5d1999-8e4c-4677-846d-ccf15a029976)
+**BasicBlog** is a full stack blog platform developed using the MERN stack, featuring ReactJS, NodeJS, ExpressJS, JWT, Google OAuth, MongoDB, and Tailwind. The project includes user and admin interfaces, a form builder for post creation, as well as theme switching and search functionalities to enhance overall usability. It also incorporates both email and Google authentication, with role-based permissions to ensure secure access for different user roles.
 
-## Overview
+🌐 **Live Demo**: [BasicBlog on Railway](https://basicblog-production.up.railway.app/)
 
-BasicBlog is a full-stack blog application developed using the MERN stack (MongoDB, Express.js, React.js, Node.js). The application features user and admin dashboards, theme toggle functionality, search capabilities, and secure user authentication using Email and Google. Redux is utilized for efficient state management.
+![basicblog](https://github.com/user-attachments/assets/08bf1361-a7ee-4b77-a700-c05f00e101ff)
+
 
 ## Features
 
@@ -34,15 +35,9 @@ BasicBlog is a full-stack blog application developed using the MERN stack (Mongo
   - Email
   - Google OAuth
 
-## Getting Started
+## 🔧 Installation & Setup
 
-### Prerequisites
-
-- Node.js
-- npm
-- MongoDB
-
-### Installation
+To set up the project locally:
 
 1. **Clone the repository**:
     ```bash
@@ -68,10 +63,9 @@ BasicBlog is a full-stack blog application developed using the MERN stack (Mongo
    Create a `.env` file in the `BasicBlog` directory with the following content:
 
     ```env
-    MONGO_URI=your_mongo_db_uri
+    MONGO=your_mongo_db_uri
     JWT_SECRET=your_jwt_secret
-    GOOGLE_CLIENT_ID=your_google_client_id
-    GOOGLE_CLIENT_SECRET=your_google_client_secret
+    VITE_FIREBASE_API_KEY=YOUR_VITE_FIREBASE_API_KEY
     ```
 
 2. **Run the application**:
@@ -88,35 +82,6 @@ BasicBlog is a full-stack blog application developed using the MERN stack (Mongo
 
 3. **Access the application**:
    Open your browser and go to `http://localhost:3000`.
-
-## Folder Structure
-
-  ```bash
-    BasicBlog/
-    │
-    ├── client/ # React frontend
-    │ ├── public/
-    │ ├── src/
-    │ │ ├── components/ # React components
-    │ │ ├── pages/ # React pages
-    │ │ ├── redux/ # Redux store and slices
-    │ │ ├── App.js
-    │ │ ├── index.js
-    │ │ └── ...
-    │ └── ...
-    │
-    ├── api/ # Node.js backend
-    │ ├── config/ # Configuration files
-    │ ├── controllers/ # Route controllers
-    │ ├── models/ # Mongoose models
-    │ ├── routes/ # Express routes
-    │ ├── middlewares/ # Express middlewares
-    │ ├── utils/ # Utility functions
-    │ ├── server.js # Entry point
-    │ └── ...
-    │
-    └── README.md
-  ```
 
 
 ## About Me
