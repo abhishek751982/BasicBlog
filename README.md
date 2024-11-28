@@ -1,6 +1,6 @@
 # BasicBlog - MERN Stack Blog Application
 
-**BasicBlog** is a full stack blog platform developed using the MERN stack, featuring ReactJS, NodeJS, ExpressJS, JWT, Google OAuth, MongoDB, and Tailwind. The project includes user and admin interfaces, a form builder for post creation, as well as theme switching and search functionalities to enhance overall usability. It also incorporates both email and Google authentication, with role-based permissions to ensure secure access for different user roles.
+**BasicBlog** is a full-stack blog platform built with the MERN stack, offering a seamless blogging experience with ReactJS, NodeJS, ExpressJS, MongoDB, and Tailwind. The platform features user and admin dashboards, enabling users to view, like, and comment on blog posts, while admins can create and manage posts and users. Enhanced with a theme toggle for light/dark modes and a search functionality for quick post discovery, it ensures excellent usability. The project incorporates secure authentication via Email and Google OAuth with role-based access, and leverages Redux for efficient state management, making it a robust and user-friendly solution.
 
 🌐 **Live Demo**: [BasicBlog on Railway](https://basicblog-production.up.railway.app/)
 
@@ -9,8 +9,8 @@
 
 ## Features
 
-- **User Dashboard**: Allows users to view, like and comment the blog posts.
-- **Admin Dashboard**: Provides admin users with tools to manage all blog posts and users.
+- **User Dashboard**: Allows users to view, like and comment on blog posts.
+- **Admin Dashboard**: Provides admin users with tools to create and manage all blog posts and users.
 - **Theme Toggle**: Users can switch between light and dark themes.
 - **Search Functionality**: Users can search for blog posts.
 - **Authentication**: Secure user authentication via Email and Google.
