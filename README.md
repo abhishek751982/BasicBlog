@@ -9,7 +9,7 @@
 
 ## Features
 
-- **User Dashboard**: Allows users to view and manage their blog posts.
+- **User Dashboard**: Allows users to view, like and comment the blog posts.
 - **Admin Dashboard**: Provides admin users with tools to manage all blog posts and users.
 - **Theme Toggle**: Users can switch between light and dark themes.
 - **Search Functionality**: Users can search for blog posts.
