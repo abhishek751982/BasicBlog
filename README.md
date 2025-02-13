@@ -2,7 +2,7 @@
 
 **BasicBlog** is a full-stack blog platform built with the MERN stack, offering a seamless blogging experience with ReactJS, NodeJS, ExpressJS, MongoDB, and Tailwind. The platform features user and admin dashboards, enabling users to view, like, and comment on blog posts, while admins can create and manage posts and users. Enhanced with a theme toggle for light/dark modes and a search functionality for quick post discovery, it ensures excellent usability. The project incorporates secure authentication via Email and Google OAuth with role-based access, and leverages Redux for efficient state management, making it a robust and user-friendly solution.
 
-🌐 **Live Demo**: [BasicBlog on Railway](https://basicblog-x7xi.onrender.com/)
+🌐 **Live Demo**: [BasicBlog on Render](https://basicblog-x7xi.onrender.com/)
 
 ![basicblog](https://github.com/user-attachments/assets/08bf1361-a7ee-4b77-a700-c05f00e101ff)
 
