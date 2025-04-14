@@ -1,15 +1,16 @@
 # BasicBlog - MERN Stack Blog Application
 
-![basicblog](https://github.com/user-attachments/assets/9a5d1999-8e4c-4677-846d-ccf15a029976)
+**BasicBlog** is a full-stack blog platform built with the MERN stack, offering a seamless blogging experience with ReactJS, NodeJS, ExpressJS, MongoDB, and Tailwind. The platform features user and admin dashboards, enabling users to view, like, and comment on blog posts, while admins can create and manage posts and users. Enhanced with a theme toggle for light/dark modes and a search functionality for quick post discovery, it ensures excellent usability. The project incorporates secure authentication via Email and Google OAuth with role-based access, and leverages Redux for efficient state management, making it a robust and user-friendly solution.
 
-## Overview
+🌐 **Live Demo**: [BasicBlog on Render](https://basicblog-x7xi.onrender.com/)
 
-BasicBlog is a full-stack blog application developed using the MERN stack (MongoDB, Express.js, React.js, Node.js). The application features user and admin dashboards, theme toggle functionality, search capabilities, and secure user authentication using Email and Google. Redux is utilized for efficient state management.
+![basicblog](https://github.com/user-attachments/assets/08bf1361-a7ee-4b77-a700-c05f00e101ff)
+
 
 ## Features
 
-- **User Dashboard**: Allows users to view and manage their blog posts.
-- **Admin Dashboard**: Provides admin users with tools to manage all blog posts and users.
+- **User Dashboard**: Allows users to view, like and comment on blog posts.
+- **Admin Dashboard**: Provides admin users with tools to create and manage all blog posts and users.
 - **Theme Toggle**: Users can switch between light and dark themes.
 - **Search Functionality**: Users can search for blog posts.
 - **Authentication**: Secure user authentication via Email and Google.
@@ -34,15 +35,9 @@ BasicBlog is a full-stack blog application developed using the MERN stack (Mongo
   - Email
   - Google OAuth
 
-## Getting Started
+## 🔧 Installation & Setup
 
-### Prerequisites
-
-- Node.js
-- npm
-- MongoDB
-
-### Installation
+To set up the project locally:
 
 1. **Clone the repository**:
     ```bash
@@ -68,10 +63,9 @@ BasicBlog is a full-stack blog application developed using the MERN stack (Mongo
    Create a `.env` file in the `BasicBlog` directory with the following content:
 
     ```env
-    MONGO_URI=your_mongo_db_uri
+    MONGO=your_mongo_db_uri
     JWT_SECRET=your_jwt_secret
-    GOOGLE_CLIENT_ID=your_google_client_id
-    GOOGLE_CLIENT_SECRET=your_google_client_secret
+    VITE_FIREBASE_API_KEY=YOUR_VITE_FIREBASE_API_KEY
     ```
 
 2. **Run the application**:
@@ -88,35 +82,6 @@ BasicBlog is a full-stack blog application developed using the MERN stack (Mongo
 
 3. **Access the application**:
    Open your browser and go to `http://localhost:3000`.
-
-## Folder Structure
-
-  ```bash
-    BasicBlog/
-    │
-    ├── client/ # React frontend
-    │ ├── public/
-    │ ├── src/
-    │ │ ├── components/ # React components
-    │ │ ├── pages/ # React pages
-    │ │ ├── redux/ # Redux store and slices
-    │ │ ├── App.js
-    │ │ ├── index.js
-    │ │ └── ...
-    │ └── ...
-    │
-    ├── api/ # Node.js backend
-    │ ├── config/ # Configuration files
-    │ ├── controllers/ # Route controllers
-    │ ├── models/ # Mongoose models
-    │ ├── routes/ # Express routes
-    │ ├── middlewares/ # Express middlewares
-    │ ├── utils/ # Utility functions
-    │ ├── server.js # Entry point
-    │ └── ...
-    │
-    └── README.md
-  ```
 
 
 ## About Me
