@@ -1,88 +1,89 @@
-# BasicBlog - MERN Stack Blog Application
+# 📝 BasicBlog - MERN Stack Blog Application
 
-**BasicBlog** is a full-stack blog platform built with the MERN stack, offering a seamless blogging experience with ReactJS, NodeJS, ExpressJS, MongoDB, and Tailwind. The platform features user and admin dashboards, enabling users to view, like, and comment on blog posts, while admins can create and manage posts and users. Enhanced with a theme toggle for light/dark modes and a search functionality for quick post discovery, it ensures excellent usability. The project incorporates secure authentication via Email and Google OAuth with role-based access, and leverages Redux for efficient state management, making it a robust and user-friendly solution.
+**BasicBlog** is a full-stack blog platform built with the MERN stack, offering a seamless blogging experience with ReactJS, NodeJS, ExpressJS, MongoDB, and Tailwind CSS.
+
+It features user and admin dashboards, allowing users to view, like, and comment on blog posts, while admins can create and manage posts and users. The app includes a light/dark mode toggle, search functionality, secure Email and Google OAuth authentication, and Redux-based state management for a smooth and modern user experience.
+
+---
 
 🌐 **Live Demo**: [BasicBlog on Render](https://basicblog-x7xi.onrender.com/)
 
-![basicblog](https://github.com/user-attachments/assets/08bf1361-a7ee-4b77-a700-c05f00e101ff)
+![BasicBlog Screenshot](https://github.com/user-attachments/assets/08bf1361-a7ee-4b77-a700-c05f00e101ff)
 
+---
 
-## Features
+## 🚀 Features
 
-- **User Dashboard**: Allows users to view, like and comment on blog posts.
-- **Admin Dashboard**: Provides admin users with tools to create and manage all blog posts and users.
-- **Theme Toggle**: Users can switch between light and dark themes.
-- **Search Functionality**: Users can search for blog posts.
-- **Authentication**: Secure user authentication via Email and Google.
-- **State Management**: Utilized Redux for efficient state management.
+- 👤 **User Dashboard** – View, like, and comment on blog posts.
+- 🛠️ **Admin Dashboard** – Create, update, and delete posts; manage users.
+- 🌗 **Theme Toggle** – Light and dark mode support.
+- 🔍 **Search Functionality** – Quickly discover relevant posts.
+- 🔐 **Authentication** – Secure login with Email and Google OAuth.
+- 🧠 **Redux State Management** – Efficient and predictable state updates.
 
-## Technologies Used
+---
 
-- **Frontend**:
-  - React.js
-  - Redux
-  - Tailwind CSS
+## 🛠 Tech Stack
 
-- **Backend**:
-  - Node.js
-  - Express.js
-  - JWT
+| Layer      | Technologies                        |
+|------------|-------------------------------------|
+| Frontend   | React.js, Redux, Tailwind CSS       |
+| Backend    | Node.js, Express.js, JWT            |
+| Database   | MongoDB                             |
+| Auth       | Email + Google OAuth                |
 
-- **Database**:
-  - MongoDB
+---
 
-- **Authentication**:
-  - Email
-  - Google OAuth
+## ⚙️ Installation & Setup
 
-## 🔧 Installation & Setup
+### 🔽 Clone the Repository
 
-To set up the project locally:
+```bash
+git clone https://github.com/abhishek751982/BasicBlog.git
+cd BasicBlog
+```
 
-1. **Clone the repository**:
+## 🖥 Backend Setup (/api)
+### Prerequisites: Node.js and MongoDB
+
+1. **Navigate to the backend directory**:
     ```bash
-    git clone https://github.com/abhishek751982/BasicBlog.git
-    cd BasicBlog
+    cd api
     ```
-
 2. **Install server dependencies**:
     ```bash
-    cd api
     npm install
     ```
 
-3. **Install client dependencies**:
+3. **Create a .env file in the api/ directory with the following**:
     ```bash
-    cd client
-    npm install
-    ```
-
-### Configuration
-
-1. **Set up environment variables**:
-   Create a `.env` file in the `BasicBlog` directory with the following content:
-
-    ```env
     MONGO=your_mongo_db_uri
     JWT_SECRET=your_jwt_secret
-    VITE_FIREBASE_API_KEY=YOUR_VITE_FIREBASE_API_KEY
     ```
 
-2. **Run the application**:
+4. **Start the backend server**:
+   ```bash
+   npm run dev
+   ```
 
-    ```bash
-    # Start the server
-    cd api
-    npm run dev
-
-    # Start the client
-    cd client
-    npm run dev
-    ```
-
-3. **Access the application**:
-   Open your browser and go to `http://localhost:3000`.
-
+## 🌐 Frontend Setup (/client)
+1. **Navigate to the frontend directory**:
+   ```bash
+   cd client
+   ```
+2. **Install client dependencies**:
+   ```bash
+   npm install
+   ```
+3. **Create a .env file in the client/ directory with your Firebase credentials**:
+   ```bash
+   VITE_FIREBASE_API_KEY=your_firebase_api_key
+   ```
+4. **Start the frontend development server**:
+   ```bash
+   npm run dev
+   ```
+   Open your browser and go to http://localhost:3000
 
 ## About Me
 
